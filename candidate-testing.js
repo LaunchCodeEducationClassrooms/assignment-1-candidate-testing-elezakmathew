@@ -44,7 +44,7 @@ function gradeQuiz(candidateAnswers) {
   }
   let candidatePercentage = (grade / correctAnswers.length) * 100;
   console.log(`>>> Overall Grade: ${candidatePercentage}% (${grade} of ${correctAnswers.length} responses correct) <<<`);
-  if (candidatePercentage <= 80) {
+  if (candidatePercentage < 80) {
     console.log(`>>> Status: FAILED <<<
 `);
   } else {
